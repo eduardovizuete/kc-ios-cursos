@@ -9,8 +9,6 @@
 import Foundation
 import UIKit
 
-typealias StarWarsAffiliation = String
-
 class StarWarsCharacters {
     
     //MARK: - Stored properties
