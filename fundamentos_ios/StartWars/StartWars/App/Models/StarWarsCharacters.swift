@@ -91,3 +91,11 @@ extension StarWarsCharacters: Comparable {
         return (lhs.proxyForComparison() < rhs.proxyForComparison())
     }
 }
+
+extension StarWarsCharacters: CustomStringConvertible {
+    var description: String {
+        get {
+            return "<\(type(of: self)): \(name) -- \(alias)>"
+        }
+    }
+}
