@@ -32,5 +32,19 @@ class ForceSensitives: StarWarsCharacters {
         self.init(firstName: jediWithFirstName, lastName: lastName, alias: alias, sound: soundData, photo: photo, wikiURL: url, affiliation: .rebelAlliance, midichlorians: midichlorians)
     }
     
+    convenience init(sithWithFirstName: String?, lastName: String?,
+                     alias: String, soundData: Data,
+                     photo: UIImage, url: URL,
+                     midichlorians: Int) {
+        self.init(firstName: sithWithFirstName, lastName: lastName,
+                  alias: alias, sound: soundData,
+                  photo: photo, wikiURL: url,
+                  affiliation: .galacticEmpire, midichlorians: midichlorians)
+    }
+    
+    //MARK: - Proxies
+    override func proxyForEquality() -> String {
+        return "\(super.proxyForEquality()) \(midichlorians)"
+    }
+    
 }
-
