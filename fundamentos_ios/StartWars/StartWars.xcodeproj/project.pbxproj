@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0E82F28227A013600F3CDD3 /* StarWarsCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E82F27227A013600F3CDD3 /* StarWarsCharacters.swift */; };
 		A0FFDF352279F13F0059166D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FFDF342279F13F0059166D /* AppDelegate.swift */; };
 		A0FFDF372279F13F0059166D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FFDF362279F13F0059166D /* ViewController.swift */; };
 		A0FFDF3A2279F13F0059166D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0FFDF382279F13F0059166D /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A0E82F27227A013600F3CDD3 /* StarWarsCharacters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsCharacters.swift; sourceTree = "<group>"; };
 		A0FFDF312279F13F0059166D /* StartWars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StartWars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0FFDF342279F13F0059166D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0FFDF362279F13F0059166D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +47,7 @@
 		A0D7A8472279F35800D19D05 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				A0E82F27227A013600F3CDD3 /* StarWarsCharacters.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 			files = (
 				A0FFDF372279F13F0059166D /* ViewController.swift in Sources */,
 				A0FFDF352279F13F0059166D /* AppDelegate.swift in Sources */,
+				A0E82F28227A013600F3CDD3 /* StarWarsCharacters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
