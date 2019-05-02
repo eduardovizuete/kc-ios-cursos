@@ -37,6 +37,9 @@
 		A0ACBB6E227B325100D8DA24 /* kylo.caf in Resources */ = {isa = PBXBuildFile; fileRef = A0ACBB62227B325000D8DA24 /* kylo.caf */; };
 		A0ACBB6F227B325100D8DA24 /* chewie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A0ACBB63227B325000D8DA24 /* chewie.jpg */; };
 		A0ACBB70227B325100D8DA24 /* chewie.caf in Resources */ = {isa = PBXBuildFile; fileRef = A0ACBB64227B325100D8DA24 /* chewie.caf */; };
+		A0ACBB72227B3A9500D8DA24 /* JSONProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0ACBB71227B3A9500D8DA24 /* JSONProcessing.swift */; };
+		A0ACBB75227B53C100D8DA24 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0ACBB74227B53C100D8DA24 /* Errors.swift */; };
+		A0ACBB77227B5F9000D8DA24 /* FundationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0ACBB76227B5F9000D8DA24 /* FundationExtension.swift */; };
 		A0E59A8D227A3043004EB961 /* StarWarsAffiliation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E59A8C227A3043004EB961 /* StarWarsAffiliation.swift */; };
 		A0E82F28227A013600F3CDD3 /* StarWarsCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E82F27227A013600F3CDD3 /* StarWarsCharacters.swift */; };
 		A0E82F2A227A1F9600F3CDD3 /* ForceSensitives.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E82F29227A1F9600F3CDD3 /* ForceSensitives.swift */; };
@@ -78,6 +81,9 @@
 		A0ACBB62227B325000D8DA24 /* kylo.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = kylo.caf; sourceTree = "<group>"; };
 		A0ACBB63227B325000D8DA24 /* chewie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chewie.jpg; sourceTree = "<group>"; };
 		A0ACBB64227B325100D8DA24 /* chewie.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = chewie.caf; sourceTree = "<group>"; };
+		A0ACBB71227B3A9500D8DA24 /* JSONProcessing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONProcessing.swift; sourceTree = "<group>"; };
+		A0ACBB74227B53C100D8DA24 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		A0ACBB76227B5F9000D8DA24 /* FundationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundationExtension.swift; sourceTree = "<group>"; };
 		A0E59A8C227A3043004EB961 /* StarWarsAffiliation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsAffiliation.swift; sourceTree = "<group>"; };
 		A0E82F27227A013600F3CDD3 /* StarWarsCharacters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsCharacters.swift; sourceTree = "<group>"; };
 		A0E82F29227A1F9600F3CDD3 /* ForceSensitives.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForceSensitives.swift; sourceTree = "<group>"; };
@@ -149,6 +155,7 @@
 		A0D7A8462279F34D00D19D05 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A0ACBB76227B5F9000D8DA24 /* FundationExtension.swift */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -159,6 +166,8 @@
 				A0E82F29227A1F9600F3CDD3 /* ForceSensitives.swift */,
 				A0E82F27227A013600F3CDD3 /* StarWarsCharacters.swift */,
 				A0E59A8C227A3043004EB961 /* StarWarsAffiliation.swift */,
+				A0ACBB71227B3A9500D8DA24 /* JSONProcessing.swift */,
+				A0ACBB74227B53C100D8DA24 /* Errors.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -304,11 +313,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0ACBB77227B5F9000D8DA24 /* FundationExtension.swift in Sources */,
+				A0ACBB72227B3A9500D8DA24 /* JSONProcessing.swift in Sources */,
 				A0E82F2A227A1F9600F3CDD3 /* ForceSensitives.swift in Sources */,
 				A0E59A8D227A3043004EB961 /* StarWarsAffiliation.swift in Sources */,
 				A0FFDF372279F13F0059166D /* ViewController.swift in Sources */,
 				A0FFDF352279F13F0059166D /* AppDelegate.swift in Sources */,
 				A0E82F28227A013600F3CDD3 /* StarWarsCharacters.swift in Sources */,
+				A0ACBB75227B53C100D8DA24 /* Errors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
