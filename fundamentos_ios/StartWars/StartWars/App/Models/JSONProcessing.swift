@@ -106,3 +106,17 @@ func decode(forceSenstitive json: JSONDictionary?) throws -> ForceSensitives {
     
     return try decode(forceSensitive: json)
 }
+
+//MARK: - Loading
+func loadFromLocalFile(filename name: String, bundle: Bundle = Bundle.main) throws -> JSONArray {
+    
+    if let url = bundle.url(forResource: name),
+        let data = try? Data.init(contentsOf: url),
+        let maybeArray = try? JSONSerialization.jsonObject(with: data,
+                                                          options: JSONSerialization.ReadingOptions.mutableContainers) as? JSONArray,
+        let array = maybeArray {
+        return array
+    } else {
+        throw StarWarsErrors.jsonParcingError
+    }
+}

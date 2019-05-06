@@ -13,4 +13,5 @@ enum StarWarsErrors: Error {
     case resourcePointedByURLNotReachable
     case wrongJSONFormat
     case nilJSONObject
+    case jsonParcingError
 }
