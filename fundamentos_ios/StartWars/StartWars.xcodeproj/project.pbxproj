@@ -40,6 +40,7 @@
 		A0ACBB72227B3A9500D8DA24 /* JSONProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0ACBB71227B3A9500D8DA24 /* JSONProcessing.swift */; };
 		A0ACBB75227B53C100D8DA24 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0ACBB74227B53C100D8DA24 /* Errors.swift */; };
 		A0ACBB77227B5F9000D8DA24 /* FundationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0ACBB76227B5F9000D8DA24 /* FundationExtension.swift */; };
+		A0D52E862280892100E33220 /* StarWarsUniverse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D52E852280892100E33220 /* StarWarsUniverse.swift */; };
 		A0E59A8D227A3043004EB961 /* StarWarsAffiliation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E59A8C227A3043004EB961 /* StarWarsAffiliation.swift */; };
 		A0E82F28227A013600F3CDD3 /* StarWarsCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E82F27227A013600F3CDD3 /* StarWarsCharacters.swift */; };
 		A0E82F2A227A1F9600F3CDD3 /* ForceSensitives.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E82F29227A1F9600F3CDD3 /* ForceSensitives.swift */; };
@@ -84,6 +85,7 @@
 		A0ACBB71227B3A9500D8DA24 /* JSONProcessing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONProcessing.swift; sourceTree = "<group>"; };
 		A0ACBB74227B53C100D8DA24 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		A0ACBB76227B5F9000D8DA24 /* FundationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundationExtension.swift; sourceTree = "<group>"; };
+		A0D52E852280892100E33220 /* StarWarsUniverse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsUniverse.swift; sourceTree = "<group>"; };
 		A0E59A8C227A3043004EB961 /* StarWarsAffiliation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsAffiliation.swift; sourceTree = "<group>"; };
 		A0E82F27227A013600F3CDD3 /* StarWarsCharacters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsCharacters.swift; sourceTree = "<group>"; };
 		A0E82F29227A1F9600F3CDD3 /* ForceSensitives.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForceSensitives.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				A0E59A8C227A3043004EB961 /* StarWarsAffiliation.swift */,
 				A0ACBB71227B3A9500D8DA24 /* JSONProcessing.swift */,
 				A0ACBB74227B53C100D8DA24 /* Errors.swift */,
+				A0D52E852280892100E33220 /* StarWarsUniverse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				A0FFDF372279F13F0059166D /* ViewController.swift in Sources */,
 				A0FFDF352279F13F0059166D /* AppDelegate.swift in Sources */,
 				A0E82F28227A013600F3CDD3 /* StarWarsCharacters.swift in Sources */,
+				A0D52E862280892100E33220 /* StarWarsUniverse.swift in Sources */,
 				A0ACBB75227B53C100D8DA24 /* Errors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
