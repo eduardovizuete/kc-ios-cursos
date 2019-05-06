@@ -63,9 +63,8 @@ class StarWarsUniverse {
         return char
     }
     
+    func affiliationName(_ affiliation: StarWarsAffiliation) -> String {
+        return affiliation.rawValue
+    }
     
-    
-}
-func affiliationName(_ affiliation: StarWarsAffiliation) -> String {
-    return affiliation.rawValue
 }
