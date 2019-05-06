@@ -16,7 +16,7 @@ class ForceSensitives: StarWarsCharacters {
     
     //MARK: - Initialization
     init(firstName: String?, lastName: String?,
-         alias: String, sound: Data,
+         alias: String?, sound: Data,
          photo: UIImage, wikiURL: URL,
          affiliation: StarWarsAffiliation, midichlorians: Int) {
         

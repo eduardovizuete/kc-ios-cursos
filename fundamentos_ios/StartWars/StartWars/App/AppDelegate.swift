@@ -15,8 +15,48 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        return true
+        
+        // crear una window
+        window = UIWindow(frame: UIScreen.main.bounds)
+        
+        // crear instancia del modelo
+        do {
+            var json = try loadFromLocalFile(filename: "regularCharacters.json")
+            let force = try loadFromLocalFile(filename: "forceSensitives.json")
+            json.append(contentsOf: force)
+            
+            // crear un array de clases de swift
+            var chars = [StarWarsCharacters]()
+            for dict in json {
+                do {
+                    let char = try decode(starWarsCharacter: dict)
+                    chars.append(char)
+                } catch {
+                    print("Error al procesar \(dict)")
+                }
+            }
+            
+            // podemos crear el modelo
+            let model = StarWarsUniverse(characters: chars)
+            
+            // creamos el UniverseVC
+            let uVC = UniverseTableViewController(model: model)
+            
+            // colocamos un NAV
+            let uNav = UINavigationController(rootViewController: uVC)
+            
+            // colocamos en window
+            window?.rootViewController = uNav
+            
+            // mostramos la window
+            window?.makeKeyAndVisible()
+            
+            return true
+            
+        } catch {
+            fatalError("Error while loading model from JSON")
+        }
+        
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

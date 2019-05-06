@@ -14,7 +14,7 @@ class StarWarsCharacters {
     //MARK: - Stored properties
     let firstName   :   String?
     let lastName    :   String?
-    let alias       :   String
+    let alias       :   String?
     let soundData   :   Data
     let photo       :   UIImage
     let url         :   URL
@@ -38,7 +38,7 @@ class StarWarsCharacters {
     //MARK: - Initialization
     init(firstName: String?,
          lastName: String?,
-         alias: String,
+         alias: String?,
          sound: Data,
          photo: UIImage,
          wikiURL: URL,
