@@ -43,6 +43,8 @@
 		A0D52E862280892100E33220 /* StarWarsUniverse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D52E852280892100E33220 /* StarWarsUniverse.swift */; };
 		A0D52E8A2280A32A00E33220 /* UniverseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D52E882280A32A00E33220 /* UniverseTableViewController.swift */; };
 		A0D52E8B2280A32A00E33220 /* UniverseTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0D52E892280A32A00E33220 /* UniverseTableViewController.xib */; };
+		A0D52E8E2280DAC700E33220 /* CharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D52E8C2280DAC700E33220 /* CharacterViewController.swift */; };
+		A0D52E8F2280DAC700E33220 /* CharacterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0D52E8D2280DAC700E33220 /* CharacterViewController.xib */; };
 		A0E59A8D227A3043004EB961 /* StarWarsAffiliation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E59A8C227A3043004EB961 /* StarWarsAffiliation.swift */; };
 		A0E82F28227A013600F3CDD3 /* StarWarsCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E82F27227A013600F3CDD3 /* StarWarsCharacters.swift */; };
 		A0E82F2A227A1F9600F3CDD3 /* ForceSensitives.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E82F29227A1F9600F3CDD3 /* ForceSensitives.swift */; };
@@ -90,6 +92,8 @@
 		A0D52E852280892100E33220 /* StarWarsUniverse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsUniverse.swift; sourceTree = "<group>"; };
 		A0D52E882280A32A00E33220 /* UniverseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniverseTableViewController.swift; sourceTree = "<group>"; };
 		A0D52E892280A32A00E33220 /* UniverseTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UniverseTableViewController.xib; sourceTree = "<group>"; };
+		A0D52E8C2280DAC700E33220 /* CharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewController.swift; sourceTree = "<group>"; };
+		A0D52E8D2280DAC700E33220 /* CharacterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterViewController.xib; sourceTree = "<group>"; };
 		A0E59A8C227A3043004EB961 /* StarWarsAffiliation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsAffiliation.swift; sourceTree = "<group>"; };
 		A0E82F27227A013600F3CDD3 /* StarWarsCharacters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsCharacters.swift; sourceTree = "<group>"; };
 		A0E82F29227A1F9600F3CDD3 /* ForceSensitives.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForceSensitives.swift; sourceTree = "<group>"; };
@@ -163,6 +167,8 @@
 			children = (
 				A0D52E882280A32A00E33220 /* UniverseTableViewController.swift */,
 				A0D52E892280A32A00E33220 /* UniverseTableViewController.xib */,
+				A0D52E8C2280DAC700E33220 /* CharacterViewController.swift */,
+				A0D52E8D2280DAC700E33220 /* CharacterViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -310,6 +316,7 @@
 				A0ACBB67227B325100D8DA24 /* greedo.jpg in Resources */,
 				A0ACBB52227B322800D8DA24 /* motti.jpg in Resources */,
 				A0ACBB6B227B325100D8DA24 /* greedo.caf in Resources */,
+				A0D52E8F2280DAC700E33220 /* CharacterViewController.xib in Resources */,
 				A0ACBB6C227B325100D8DA24 /* jabba.jpg in Resources */,
 				A0ACBB57227B322800D8DA24 /* yoda.caf in Resources */,
 				A0FFDF3F2279F1400059166D /* LaunchScreen.storyboard in Resources */,
@@ -331,6 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0D52E8E2280DAC700E33220 /* CharacterViewController.swift in Sources */,
 				A0ACBB77227B5F9000D8DA24 /* FundationExtension.swift in Sources */,
 				A0ACBB72227B3A9500D8DA24 /* JSONProcessing.swift in Sources */,
 				A0E82F2A227A1F9600F3CDD3 /* ForceSensitives.swift in Sources */,
