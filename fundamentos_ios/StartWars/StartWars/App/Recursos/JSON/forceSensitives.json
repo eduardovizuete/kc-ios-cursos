@@ -68,7 +68,7 @@
   "jedi"         : false,
   "sith"         : true,
   "affiliation"  : "First Order",
-  "url"          : "http://starwars.wikia.com/wiki/Kylo_Ren",
+  "url"          : "https://es.wikipedia.org/wiki/Kylo_Ren",
   "midichlorians": 9000
   }
   ]

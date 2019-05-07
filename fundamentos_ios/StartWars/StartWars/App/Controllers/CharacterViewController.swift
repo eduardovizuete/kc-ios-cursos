@@ -11,6 +11,7 @@ import UIKit
 class CharacterViewController: UIViewController {
 
     //MARK: - properties
+    
     @IBOutlet weak var photoView: UIImageView!
     
     let model: StarWarsCharacters
@@ -41,5 +42,11 @@ class CharacterViewController: UIViewController {
     }
     
     @IBAction func displayWikipedia(_ sender: UIBarButtonItem) {
+        // crear wikiVC
+        let wVC = WikiViewController(model: model)
+        
+        // hacer push
+        navigationController?.pushViewController(wVC, animated: true)
     }
 }
+

@@ -40,6 +40,8 @@
 		A0ACBB72227B3A9500D8DA24 /* JSONProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0ACBB71227B3A9500D8DA24 /* JSONProcessing.swift */; };
 		A0ACBB75227B53C100D8DA24 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0ACBB74227B53C100D8DA24 /* Errors.swift */; };
 		A0ACBB77227B5F9000D8DA24 /* FundationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0ACBB76227B5F9000D8DA24 /* FundationExtension.swift */; };
+		A0B9A0F12281EB9400CB2399 /* WikiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B9A0EF2281EB9400CB2399 /* WikiViewController.swift */; };
+		A0B9A0F22281EB9400CB2399 /* WikiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0B9A0F02281EB9400CB2399 /* WikiViewController.xib */; };
 		A0D52E862280892100E33220 /* StarWarsUniverse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D52E852280892100E33220 /* StarWarsUniverse.swift */; };
 		A0D52E8A2280A32A00E33220 /* UniverseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D52E882280A32A00E33220 /* UniverseTableViewController.swift */; };
 		A0D52E8B2280A32A00E33220 /* UniverseTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0D52E892280A32A00E33220 /* UniverseTableViewController.xib */; };
@@ -89,6 +91,8 @@
 		A0ACBB71227B3A9500D8DA24 /* JSONProcessing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONProcessing.swift; sourceTree = "<group>"; };
 		A0ACBB74227B53C100D8DA24 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		A0ACBB76227B5F9000D8DA24 /* FundationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundationExtension.swift; sourceTree = "<group>"; };
+		A0B9A0EF2281EB9400CB2399 /* WikiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiViewController.swift; sourceTree = "<group>"; };
+		A0B9A0F02281EB9400CB2399 /* WikiViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WikiViewController.xib; sourceTree = "<group>"; };
 		A0D52E852280892100E33220 /* StarWarsUniverse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsUniverse.swift; sourceTree = "<group>"; };
 		A0D52E882280A32A00E33220 /* UniverseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniverseTableViewController.swift; sourceTree = "<group>"; };
 		A0D52E892280A32A00E33220 /* UniverseTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UniverseTableViewController.xib; sourceTree = "<group>"; };
@@ -169,6 +173,8 @@
 				A0D52E892280A32A00E33220 /* UniverseTableViewController.xib */,
 				A0D52E8C2280DAC700E33220 /* CharacterViewController.swift */,
 				A0D52E8D2280DAC700E33220 /* CharacterViewController.xib */,
+				A0B9A0EF2281EB9400CB2399 /* WikiViewController.swift */,
+				A0B9A0F02281EB9400CB2399 /* WikiViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -315,6 +321,7 @@
 				A0ACBB69227B325100D8DA24 /* c3po.jpg in Resources */,
 				A0ACBB67227B325100D8DA24 /* greedo.jpg in Resources */,
 				A0ACBB52227B322800D8DA24 /* motti.jpg in Resources */,
+				A0B9A0F22281EB9400CB2399 /* WikiViewController.xib in Resources */,
 				A0ACBB6B227B325100D8DA24 /* greedo.caf in Resources */,
 				A0D52E8F2280DAC700E33220 /* CharacterViewController.xib in Resources */,
 				A0ACBB6C227B325100D8DA24 /* jabba.jpg in Resources */,
@@ -348,6 +355,7 @@
 				A0E82F28227A013600F3CDD3 /* StarWarsCharacters.swift in Sources */,
 				A0D52E862280892100E33220 /* StarWarsUniverse.swift in Sources */,
 				A0D52E8A2280A32A00E33220 /* UniverseTableViewController.swift in Sources */,
+				A0B9A0F12281EB9400CB2399 /* WikiViewController.swift in Sources */,
 				A0ACBB75227B53C100D8DA24 /* Errors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
