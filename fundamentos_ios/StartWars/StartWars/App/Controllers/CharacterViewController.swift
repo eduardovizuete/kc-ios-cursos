@@ -10,8 +10,12 @@ import UIKit
 
 class CharacterViewController: UIViewController {
 
+    //MARK: - properties
+    @IBOutlet weak var photoView: UIImageView!
+    
     let model: StarWarsCharacters
     
+    //MARK: - initialization
     init(model: StarWarsCharacters) {
         self.model = model
         super.init(nibName: nil, bundle: nil)
@@ -21,5 +25,21 @@ class CharacterViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    //MARK: - view lifecycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        syncViewWithModel()
+    }
     
+    //MARK: - sync view -> model
+    func syncViewWithModel() {
+        photoView.image = model.photo
+        title = model.alias
+    }
+    //MARK: - actions
+    @IBAction func playSound(_ sender: Any) {
+    }
+    
+    @IBAction func displayWikipedia(_ sender: UIBarButtonItem) {
+    }
 }
