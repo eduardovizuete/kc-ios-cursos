@@ -23,6 +23,21 @@ class UniverseTableViewController: UITableViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // MARK: - Table view delegate
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // descubrir la afiliacion
+        let aff = getAffiliation(forSection: indexPath.section)
+        
+        // descubrir personaje
+        let char = model.character(atIndex: indexPath.row, forAffiliation: aff)
+        
+        // crear vc
+        let charVC = CharacterViewController(model: char)
+        
+        // pushearlo
+        self.navigationController?.pushViewController(charVC, animated: true)
+    }
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
