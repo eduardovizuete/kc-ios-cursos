@@ -45,8 +45,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // colocamos un NAV
             let uNav = UINavigationController(rootViewController: uVC)
             
+            //creamos un charVC
+            let charVC = CharacterViewController(model: model.character(atIndex: 0, forAffiliation: .galacticEmpire))
+            
+            // colocamos en un NAV
+            let cNav = UINavigationController.init(rootViewController: charVC)
+            
+            // creamos el splitVC
+            let splitVC = UISplitViewController()
+            splitVC.viewControllers = [uNav, cNav]
+            
             // colocamos en window
-            window?.rootViewController = uNav
+            window?.rootViewController = splitVC
             
             // mostramos la window
             window?.makeKeyAndVisible()

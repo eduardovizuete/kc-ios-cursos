@@ -26,6 +26,11 @@ class StarWarsUniverse {
         for each in chars {
             dict[each.affiliation]?.append(each)
         }
+        
+        // ordenamos los personajes dentro de cada afiliacion
+        for (affiliation, characters) in dict {
+            dict[affiliation] = characters.sorted()
+        }
     }
     
     //MARK: - Utils
