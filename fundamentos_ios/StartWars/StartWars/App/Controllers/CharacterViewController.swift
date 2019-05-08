@@ -14,7 +14,7 @@ class CharacterViewController: UIViewController {
     
     @IBOutlet weak var photoView: UIImageView!
     
-    let model: StarWarsCharacters
+    var model: StarWarsCharacters
     
     //MARK: - initialization
     init(model: StarWarsCharacters) {
@@ -50,3 +50,10 @@ class CharacterViewController: UIViewController {
     }
 }
 
+//MARK: - Protocols
+extension CharacterViewController: UniverseTableViewControllerDelegate {
+    func universeTableViewControllerDelegate(_ uVC: UniverseTableViewController, didSelectedCharacter char: StarWarsCharacters) {
+        model = char
+        syncViewWithModel()
+    }
+}

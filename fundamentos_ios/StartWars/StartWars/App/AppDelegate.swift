@@ -51,6 +51,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // colocamos en un NAV
             let cNav = UINavigationController.init(rootViewController: charVC)
             
+            // asignamos delegados
+            uVC.delegate = charVC
+            
             // creamos el splitVC
             let splitVC = UISplitViewController()
             splitVC.viewControllers = [uNav, cNav]
