@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class CharacterViewController: UIViewController {
 
@@ -15,6 +16,8 @@ class CharacterViewController: UIViewController {
     @IBOutlet weak var photoView: UIImageView!
     
     var model: StarWarsCharacters
+    
+    var player: AVAudioPlayer?
     
     //MARK: - initialization
     init(model: StarWarsCharacters) {
@@ -39,6 +42,20 @@ class CharacterViewController: UIViewController {
     }
     //MARK: - actions
     @IBAction func playSound(_ sender: Any) {
+        do {
+            // avisamos que vamos a reproducir sonido
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+            
+            // le decimos que formato de sonido vamos a reproducir
+            player = try AVAudioPlayer(data: model.soundData, fileTypeHint: AVFileType.caf.rawValue)
+            
+            // reproducir el sonido
+            player?.play()
+        } catch let error as NSError {
+            print("error reproduciendo sonido")
+            print("\(error)")
+        }
     }
     
     @IBAction func displayWikipedia(_ sender: UIBarButtonItem) {
