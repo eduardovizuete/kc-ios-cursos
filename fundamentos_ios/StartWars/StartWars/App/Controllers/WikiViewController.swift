@@ -16,7 +16,7 @@ class WikiViewController: UIViewController {
     
     @IBOutlet weak var browser: UIWebView!
     
-    let model: StarWarsCharacters
+    var model: StarWarsCharacters
     
     //MARK: - initialization
     init(model: StarWarsCharacters) {
@@ -40,6 +40,16 @@ class WikiViewController: UIViewController {
         super.viewWillAppear(animated)
         syncViewWithModel()
         browser.delegate = self
+        
+        // alta notificaciones
+        subscribe()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        // baja notificaciones
+        unsubscribe()
     }
     
 }
@@ -55,5 +65,32 @@ extension WikiViewController: UIWebViewDelegate {
     func webViewDidFinishLoad(_ webView: UIWebView) {
         spinner.isHidden = true
         spinner.stopAnimating()
+    }
+}
+
+//MARK: - Notification
+extension WikiViewController {
+    func subscribe() {
+        // reference notification center
+        let nc = NotificationCenter.default
+        
+        nc.addObserver(forName: UniverseTableViewController.notificationName, object: nil, queue: OperationQueue.main)
+            {(not: Notification) in
+            // get notification data
+            let userInfo = not.userInfo
+            let char = userInfo?[UniverseTableViewController.characterKey]
+            
+            // update model
+            self.model = char as! StarWarsCharacters
+            
+            // update ui
+            self.syncViewWithModel()
+        }
+    }
+    
+    func unsubscribe() {
+        // reference notification center
+        let nc = NotificationCenter.default
+        nc.removeObserver(self)
     }
 }
