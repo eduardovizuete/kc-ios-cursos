@@ -245,6 +245,35 @@
             </objects>
             <point key="canvasLocation" x="-447.19999999999999" y="1682.608695652174"/>
         </scene>
+        <!--5 Square center and self contained image-->
+        <scene sceneID="04u-QM-o03">
+            <objects>
+                <viewController title="5 Square center and self contained image" id="ogr-hY-fcD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tnF-50-8ax">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chewie.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="I90-GM-7Xa">
+                                <rect key="frame" x="0.0" y="243.5" width="375" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="I90-GM-7Xa" secondAttribute="height" multiplier="15:8" id="502-fN-jhH"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="I90-GM-7Xa" firstAttribute="centerX" secondItem="ZCM-Nd-CRa" secondAttribute="centerX" id="Eg3-yE-VRH"/>
+                            <constraint firstItem="I90-GM-7Xa" firstAttribute="height" relation="lessThanOrEqual" secondItem="tnF-50-8ax" secondAttribute="height" id="Ymh-ti-A8e"/>
+                            <constraint firstItem="I90-GM-7Xa" firstAttribute="width" relation="lessThanOrEqual" secondItem="tnF-50-8ax" secondAttribute="width" id="ncP-0M-WvO"/>
+                            <constraint firstItem="I90-GM-7Xa" firstAttribute="centerY" secondItem="ZCM-Nd-CRa" secondAttribute="centerY" id="vxi-FR-0PR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZCM-Nd-CRa"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QkP-ye-d2S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-447" y="2353"/>
+        </scene>
     </scenes>
     <resources>
         <image name="chewie.jpg" width="1024" height="768"/>
