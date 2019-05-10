@@ -1,5 +1,5 @@
 # kc-ios-cursos
-Keepcoding cursos relaciones con IOS
+Keepcoding cursos relacionados con IOS
 
 ***
 ## kc-ios-fundamentos (branch: feature/fundamentos_starwar)
